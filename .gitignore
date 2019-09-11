@@ -1,0 +1,4 @@
+*.ipynb_*
+*.pyc
+.DS_Store
+.idea
