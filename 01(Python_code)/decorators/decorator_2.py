@@ -2,14 +2,21 @@
 def my_deco(function):
     def wrapper(*args, **kwargs):
         print("I'm here")
-        function(*args, **kwargs)
+        res = function(*args, **kwargs)
+        print("there")
+        return res
 
     return wrapper
 
 
 @my_deco
 def say(smth):
+    print(smth)
     return smth
 
-print(say('hello'))
+
+a = say('hello')
+print(a)
+
+
 
